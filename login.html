@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Page in HTML with CSS Code Example</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet">
+
+        <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="login.css">
+
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div class="box-form">
+            <div class="left">
+                <div class="overlay">
+                    <h3>Welcome to Xcursion Xpert!!</h3>
+                    <p>Say goodbye to long wait times and endless searches.
+                        Chatbot offers you instant access to knowledge,
+                        recommendations, and assistance 24/7. From travel tips
+                        to general queries, our chatbot is your one-stop
+                        solution. Just type in your question, and let Chatbot do
+                        the rest.</p>
+                    <span>
+                        <p>Login with social media</p>
+                        <a href="https://www.facebook.com/v13.0/dialog/oauth?
+            client_id=YOUR_APP_ID&
+            redirect_uri=YOUR_REDIRECT_URI&
+            scope=email"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://accounts.google.com/o/oauth2/auth?
+            client_id=YOUR_CLIENT_ID&
+            redirect_uri=YOUR_REDIRECT_URI&
+            response_type=code&
+            scope=openid%20email%20profile"><i class="fa fa-google"
+                                aria-hidden="true"></i> Login with Google</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="right">
+                <h4>Login</h4>
+                <p >Don't have an account? <a href="#">Creat Your Account</a> it
+                    takes less than a minute</p>
+                <div class="inputs">
+                    <input type="text" placeholder="user name">
+                    <br>
+                    <input type="password" placeholder="password">
+                </input>
+</div>
+                <br><br>
+
+                <div class="remember-me--forget-password">
+                    <!-- Angular -->
+                    <label>
+                        <input type="checkbox" name="item" checked />
+                        <span class="text-checkbox">Remember me</span>
+                    </label>
+                    <p>forget password?</p>
+                </div>
+
+                <br>
+                <button>Login</button>
+            </div>
+
+        </div>
+        <!-- partial -->
+
+    </body>
+</html>
