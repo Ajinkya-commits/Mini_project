@@ -8,6 +8,7 @@ body {
   }
   .overlay p{
  font-size: 25px;
+ width: 800px;
   }
   .overlay h3{
     font-size: 50px;
@@ -88,10 +89,7 @@ body {
     font-size: 6vmax;
     line-height: 0;
   }
-  .box-form .right p {
-    font-size: 14px;
-    color: #B0B3B9;
-  }
+  
   .box-form .right .inputs {
     overflow: hidden;
   }
@@ -129,6 +127,9 @@ body {
   .right{
     margin-bottom: 100%;
     height: 800px;
+  }
+  .right p{
+    font-size: 500px;
   }
   
   label {
