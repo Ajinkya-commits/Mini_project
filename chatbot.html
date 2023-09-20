@@ -13,23 +13,19 @@
 <body>
     <section class="sign_up">
         <div class="container">
-            <h1>Register</h1>
+			<h1>Register</h1><form action="/submit" method="POST">
             <p id="create">Create your account. It's free and only takes a minute</p>
-            <div class="name">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
+			<div class="name">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
             </div>
             <div class="details">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Passowrd" required>
-                <input type="password" placeholder="Confirm Password" required>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" class="check" required>
-                <p class="check">I accept the<span class="term"><a href="#">Terms of use</a></span> & <span><a id="privacy" href="#">Privacy Policy</a></span></p>
-            </div>
-            <a href="" id="register_btn">Register Now</a>
-        </div>
+                <input type="email" id="eMail" name="eMail" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" placeholder="Confirm Password" required>
+			</div>
+            <input type="submit" id="register_btn">
+		</div></form>
         <div class="signIn">
             <p>Already have an account?<span><a href="#">Sign in</a></span></p>
         </div>
