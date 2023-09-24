@@ -1,35 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head
-	>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chat.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chat.css" />
     <title>Register Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="sign_up">
-        <div class="container">
-			<h1>Register</h1><form action="/submit" method="POST">
-            <p id="create">Create your account. It's free and only takes a minute</p>
-			<div class="name">
-                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            </div>
-            <div class="details">
-                <input type="email" id="eMail" name="eMail" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" id="password" name="password" placeholder="Confirm Password" required>
-			</div>
-            <input type="submit" id="register_btn">
-		</div></form>
-        <div class="signIn">
-            <p>Already have an account?<span><a href="#">Sign in</a></span></p>
-        </div>
+      <div class="container">
+        <h1>Register</h1>
+        <form action="/submit" method="POST">
+          <p id="create">
+            Create your account. It's free and only takes a minute
+          </p>
+          <div class="name">
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="details">
+            <input
+              type="email"
+              id="eMail"
+              name="eMail"
+              placeholder="Email"
+              required
+            />
+            <input type="password" placeholder="Password" required />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <input type="submit" id="register_btn" />
+        </form>
+      </div>
+      <div class="signIn">
+        <p>
+          Already have an account?<span><a href="signin">Sign in</a></span>
+        </p>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
