@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+ 
     font-family: sans-serif;
 }
     body {
@@ -86,7 +86,7 @@ input{
     color: white;
     border-radius: 8px;
     margin-top: 20px;
-    margin-left: 65px;
+    margin-left: -6px;
 
 #register_btn:hover{
     background-color: transparent;
