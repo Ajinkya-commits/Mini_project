@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
     body {
-        background-image: url('hii.jpg');
+        background-image: url('boii.jpg');
         background-size: cover; /* Ensures the image covers the entire viewport */
     }
 
@@ -21,13 +21,15 @@
 }
 
 .container{
-    background-color: rgba(25, 0, 0, 0.5); /* Red color with 50% opacity */
-    width: 380px;
-    height: 400px;
+    background-color: rgba(18, 17, 17, 0.932); /* Red color with 50% opacity */
+    width: 450px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3%;
+    border: 1.5px solid rgb(7, 26, 70);
 }
 
 h1{
@@ -41,13 +43,23 @@ h1{
 }
 
 input{
-    padding: 6px;
+    padding: 10px;
+    border: 1px groove black;
     margin-top: 10px;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 .details input{
-   width: 335px;
+   width: 370px;
+}
+#firstName
+{
+    width: 270px;
+}
+#lastName
+{
+    width: 270px;
 }
 .name{
 	display: inline-block;
@@ -61,19 +73,23 @@ input{
 .check{
     display: inline-block;
 }
+.a
+{
+    text-align: center;
 
+}
 #register_btn{
     text-decoration: none;
-    padding: 10px 120px;
-    border: 1px solid green;
-    background: green;
+    padding: 20px 120px;
+    border: 1px solid rgb(33, 33, 36);
+    background: rgb(207, 125, 31);
     color: white;
     border-radius: 8px;
     margin-top: 20px;
-}
+    margin-left: 65px;
 
 #register_btn:hover{
-    background: transparent;
+    background-color: transparent;
     color: black;
     border: 1px solid black;
     transition: .5s;
@@ -89,9 +105,10 @@ input{
 
 .signIn{
     display: block;
-    color: black;
+    color: rgb(232, 217, 217);
     position: absolute;
     top: 81%;
+    text-decoration: none;
 }
 
 .checkbox{
@@ -100,6 +117,8 @@ input{
 }
 
 .signIn p span a{
-    color: black;
+    color: rgb(236, 224, 224);
     margin-left: 6px;
+    text-decoration: none;
+}
 }
