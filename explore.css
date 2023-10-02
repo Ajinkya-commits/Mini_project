@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    background-image: url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  header {
+    
+    background-color: #000000; 
+   
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  main {
+    margin-top: 90px;
+  }
+  
+  .hero {
+    color : black;
+    /* background-image: url(hero.jpg);
+    background-position: center;
+    background-size: cover;  */
+    padding: 20px;
+  }
+  
+  .hero h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  .hero form {
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+  }
+  
+  .categories {
+    margin-top: 20px;
+  
+  }
+  
+  .categories h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    background-color: black;
+    color:aliceblue;
+  }
+  
+  .categories ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  a:hover {
+    color: #ccc;
+  }
+
+  footer {
+    color: white;
+    text-align : center ;
+    padding: 20px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .div {
+    display : flex;
+    flex-direction : column ;
+    justify-content: space-between ;
+  }
+
+  ::placeholder{
+    font-size : 20px;
+  }
+    textarea::placeholder{
+      padding : 10 px;
+    }
+  
+    
