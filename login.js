@@ -94,10 +94,35 @@ app.get("/login", function (req, res) {
 });
 
 app.get("/logout",function (req, res) {
-	//res.send(`<script>alert("${req.session.eMail} successfully Logged out!"); window.location.href="/";</script>`);
-	req.session.loggedin = null;
-	res.send(`<script>alert("${userEmail} successfully Logged out!"); window.location.href="/";</script>`);
-	res.redirect("/");
+	if(req.session.loggedin){
+		req.session.loggedin = null;
+		res.send(`<script>alert("${userEmail} successfully Logged out!"); window.location.href="/";</script>`);
+		res.redirect("/");
+	} else {
+		res.send(`<script>alert("Please Login first!"); window.location.href="/";</script>`);
+	}
+});
+
+app.get("/explore", function (req, res) {
+	if(req.session.loggedin) {
+		res.sendFile(__dirname + "/explore.html");
+	} else {
+		res.send(`<script>alert("Please Login first!"); window.location.href="/";</script>`);
+	}
+});
+
+app.post("/comment",function (req, res) {
+	const comment = req.body.comment;
+	
+	const query = `
+	INSERT INTO comment (comment,eMail) VALUES("${comment}","${userEmail}");`;
+	connection.query(query, function (error) {
+		if (error) {
+			throw error;
+		} else {
+			res.redirect("/");
+		}
+	});
 });
 app.use(express.static(__dirname));
 
