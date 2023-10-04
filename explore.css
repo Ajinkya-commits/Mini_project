@@ -1,8 +1,10 @@
 body {
     font-family: "Open Sans";
-    background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80);
-    
+    background-image: url(hero.jpg);
+    background-position: center;
+    height: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
   }
 
   .sec{
@@ -17,8 +19,12 @@ body {
     margin: 10px;
     border-radius: 5px;
 }
+#comment-box{
+  padding: 20px;
+}
 #post{
   font-size: 20px;
+  padding: 10px;
 }
 #post:hover{
     background-color: rgb(119, 232, 132);

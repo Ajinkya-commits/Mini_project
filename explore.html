@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Review</title>
   <link rel="stylesheet" href="explore.css">
 </head>
 <div>
-<body>
-  <header>
-    <h1><span>Xcursion Xpert Review</span></h1>
-    <nav class="navbar-section">
-      <a href="/">Home</a>
-      <a href="/signin">login in</a>
-      <a href="#">chatbot</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <div class="sec">
-      <section class="hero">
-        <h2>Have a Wonderful Day</h2>
-        <form action="/comment" method ="POST">
-      <input class="comment1" type="text" id="comment-box" placeholder="Enter comment"><br>
-      <button id="post">Post</button>
-      <ul id="unordered">
-      </ul>
-        </form>
-      </section>
+
+  <body>
+    <div class="img"></div>
+    <div class="main-div">
+      <header>
+        <h1><span>Xcursion Xpert Review</span></h1>
+        <nav class="navbar-section">
+          <a href="test.html">Home</a>
+          <a href="/signin">login in</a>
+          <a href="test.html">chatbot</a>
+          <a href="aboutpage.html">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div class="sec">
+          <section class="hero">
+            <h2>Have a Wonderful Day</h2>
+            <form action="/comment" method="POST">
+              <input class="comment1" type="text" id="comment-box" placeholder="Enter comment"><br>
+              <button id="post">Post</button>
+              <ul id="unordered">
+              </ul>
+            </form>
+          </section>
+        </div>
+        
+        <section>
+          <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+                    
+      <!-- partial:index.partial.html -->
+      <section id="app">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="comment">
+              <p v-for="items in item" v-text="items"></p>
+                </div><!--End Comment-->
+                </div><!--End col -->
+                </div><!-- End row -->
+            <div class="row">
+              <div class="col-6">
+            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+              </div><!-- End col -->
+            </div><!--End Row -->
+          </div><!--End Container -->
+        </section><!-- end App -->
+      <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script  src="js/script.js"></script>
+                 
+              </div>
+          </div>
+          </div>
+      </section>        
+            
+      </main>
+
+
     </div>
-    <!-- <section class="categories">
-      <h2>Most Popular Categories</h2>
-      <ul>
-        <li><a href="#">Amazing Places</a></li>
-        <li><a href="#">Concerts</a></li>
-        <li><a href="#">Travel Tips</a></li>
-        <li><a href="#">Music Festival</a></li>
-      </ul>
-    </section> -->
-  </main>
+    <script>$(document).ready(function(){ 
   
+      $(".primaryContained").on('click', function(){
+      $(".comment").addClass("commentClicked");
+    });
+    $("textarea").on('keyup.enter', function(){
+      $(".comment").addClass("commentClicked");
+    });
+    });
   
-</div>
-<script>
-   var post= document.getElementById("post");
-post.addEventListener("click", function(){
-    var commentBoxValue= document.getElementById("comment-box").value;
- 
-    var li = document.createElement("li");
-    var text = document.createTextNode(commentBoxValue);
-    li.appendChild(text);
-    document.getElementById("unordered").appendChild(li);
- 
-});
-</script>
-</body>
+  new Vue({
+      el: "#app",
+      data:{
+         title: 'Add a comment',
+        newItem: '',
+        item: [],
+      },
+      methods:{
+        addItem  (){
+        this.item.push(this.newItem);
+          this.newItem = "";
+        }
+    }
+  
+    });</script>
+  </body>
+
 </html>
