@@ -29,8 +29,7 @@ body {
    
     background: #FFFFFF;
     border-radius: 10px;
-    
- 
+
     flex: 1 1 100%;
     align-items: stretch;
     justify-content: space-between;
@@ -137,6 +136,7 @@ body {
     background-image: linear-gradient(135deg, #8b9dc5 10%, #8635ab 100%);
   }
   .right{
+    margin-bottom: 100%;
     height: 800px;
   }
   .right p{
