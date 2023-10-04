@@ -7,8 +7,8 @@
 <div>
 <body>
   <header>
-    <h1>Xcursion Xpert Review</h1>
-    <nav>
+    <h1><span>Xcursion Xpert Review</span></h1>
+    <nav class="navbar-section">
       <a href="/">Home</a>
       <a href="/signin">login in</a>
       <a href="#">chatbot</a>
@@ -17,20 +17,18 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <h2>Have a Wonderful Day :)</h2>
-      <form action="/comment" method ="POST">
-        <input type="text" id ="comment" name ="comment" placeholder="Share your experience - Leave a Review Today ! ">
-        <select name="category">
-          <option value="location">Location</option>
-          <option value="food">Food</option>
-          <option value="shopping">Shopping</option>
-          <option value="Exploring">Exploring</option>
-        </select>
-        <button type="submit">Search</button>
-      </form>
-    </section>
-    <section class="categories">
+    <div class="sec">
+      <section class="hero">
+        <h2>Have a Wonderful Day</h2>
+        <form action="/comment" method ="POST">
+      <input class="comment1" type="text" id="comment-box" placeholder="Enter comment"><br>
+      <button id="post">Post</button>
+      <ul id="unordered">
+      </ul>
+        </form>
+      </section>
+    </div>
+    <!-- <section class="categories">
       <h2>Most Popular Categories</h2>
       <ul>
         <li><a href="#">Amazing Places</a></li>
@@ -38,12 +36,22 @@
         <li><a href="#">Travel Tips</a></li>
         <li><a href="#">Music Festival</a></li>
       </ul>
-    </section>
+    </section> -->
   </main>
   
-  <footer>
-    <p>Xcursion Xpert</p>
-  </footer>
+  
 </div>
+<script>
+   var post= document.getElementById("post");
+post.addEventListener("click", function(){
+    var commentBoxValue= document.getElementById("comment-box").value;
+ 
+    var li = document.createElement("li");
+    var text = document.createTextNode(commentBoxValue);
+    li.appendChild(text);
+    document.getElementById("unordered").appendChild(li);
+ 
+});
+</script>
 </body>
 </html>

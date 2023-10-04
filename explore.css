@@ -1,71 +1,79 @@
 body {
-    font-family: sans-serif;
-    background-image: url(hero.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  header {
+    font-family: "Open Sans";
+    background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80);
     
-    background-color: #000000; 
-   
+    object-fit: cover;
+  }
+
+  .sec{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   margin-left: 80px;
+  }
+#comment-box, #post {
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#post{
+  font-size: 20px;
+}
+#post:hover{
+    background-color: rgb(119, 232, 132);
+}
+  header {
+    display: flex;
+    background-color: #0f1111; 
+    align-items: center;
     color: white;
     padding: 20px;
+    justify-content: space-between;
+    border-radius: 30px;
   }
   
   h1 {
     font-size: 36px;
-    margin-bottom: 0;
-  }
-  
-  nav {
-    float: right;
   }
   
   a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-size: 30px;
   }
   
-  main {
-    margin-top: 90px;
-  }
+
   
   .hero {
     color : black;
-    /* background-image: url(hero.jpg);
-    background-position: center;
-    background-size: cover;  */
+    
     padding: 20px;
   }
   
   .hero h2 {
     color: white;
-    font-size: 24px;
-    margin-bottom: 0;
+    font-size: 50px;
+   margin-left: 10px;
   }
   
   .hero form {
     margin-top: 20px;
   }
   
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
+  
   
   select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
   }
   
   button {
-    width: 100%;
+    
     padding: 10px;
-    background-color: #000000;
+    background-color: #0f1111;
     color: white;
     border: none;
   }
@@ -115,8 +123,6 @@ body {
   ::placeholder{
     font-size : 20px;
   }
-    textarea::placeholder{
-      padding : 10 px;
-    }
+    
   
     
