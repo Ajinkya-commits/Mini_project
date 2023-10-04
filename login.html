@@ -17,20 +17,21 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
     <div class="box-form">
       <div class="left">
         <div class="overlay">
           <h3>Welcome to Xcursion Xpert!!</h3>
           <p>
+            <b>
             Say goodbye to long wait times and endless searches. Chatbot offers
             you instant access to knowledge, recommendations, and assistance
             24/7. From travel tips to general queries, our chatbot is your
             one-stop solution. Just type in your question, and let Chatbot do
             the rest.
+            </b>
           </p>
           <span>
-            <p>Login with social media</p>
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Login with social media</p>
             <a
               href="https://www.facebook.com/v13.0/dialog/oauth?
             client_id=YOUR_APP_ID&
@@ -51,29 +52,30 @@
         </div>
       </div>
       <div class="right">
-        <h4>Login</h4>
+        <h4 style="text-align: center; color: rgb(27, 12, 106);"><u>Login Now!</u></h4>
         <form action="/login" onsubmit="alertValue()" method="POST">
-          <p>
+          <p style="color: rgb(1, 1, 13); font-size: 30px;">
+            <b >
             Don't have an account? <a href="signup">Create Your Account</a> it
-            takes less than a minute
+            takes less than a minute</b>
           </p>
           <div class="inputs">
             <input
               type="text"
               id="eMail"
               name="eMail"
-              placeholder="user name"
+              placeholder="Enter the username"
             />
             <br />
             <input
               type="password"
               id="password"
               name="password"
-              placeholder="password"
+              placeholder="Enter your password"
             />
           </div>
           <br />
-		  <button input type="login">Login</button>
+		  <button input type="login" style="font-size: 35px; padding: 20px 80px;">Login</button>
         </form>
         <script>
           function alertValue() {
@@ -86,7 +88,7 @@
             }
           }
         </script>
-      </div>
+      </uLogin<>
     </div>
     <!-- partial -->
   </body>
