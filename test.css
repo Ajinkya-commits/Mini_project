@@ -492,3 +492,50 @@ header h2 {
     font-size: 34px;
   }
 }
+
+h2 {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  
+  h3 {
+    animation: fadeInRight 3s ease-in-out;
+  }
+
+  
+  p {
+    animation: fadeInUp 6s ease-in-out;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

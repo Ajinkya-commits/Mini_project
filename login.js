@@ -1,8 +1,6 @@
 const mysql = require("mysql");
 const express = require("express");
 const bodyParser = require("body-parser");
-//const encoder = bodyParser.urlencoded({extended: false});
-const bcrypt = require("bcrypt");
 const session = require("express-session");
 
 const app = express();
@@ -120,10 +118,19 @@ app.post("/comment",function (req, res) {
 		if (error) {
 			throw error;
 		} else {
-			res.redirect("/");
+			res.redirect("/explore");
+
+			connection.query('SELECT eMail,comment FROM comment', function (error, results){
+			if (error) {
+				throw error;
+			}
+			console.log('Results:', results); // This will contain the rows data
+			});
 		}
 	});
 });
+
+
 app.use(express.static(__dirname));
 
 app.listen(4000);
