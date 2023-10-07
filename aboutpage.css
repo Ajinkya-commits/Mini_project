@@ -10,11 +10,34 @@
     border-right: none;
 
 }
-.about
-{
 
+.about1
+{
+    
     font-size: 30px;
     font-weight: bolder;
+    opacity: 0; 
+            color: rgb(33, 33, 170); 
+            animation: fadeColorChange 5s ease-in-out forwards;
+}
+@keyframes fadeColorChange {
+    0% {
+        opacity: 0;
+        color: rgb(89, 253, 24); 
+    }
+    100% {
+        opacity: 1; 
+        color: red; 
+    }
+}
+.about
+{
+    transition: transform 0.3s;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.about:hover{
+    transform: scale(1.1);
 }
 .nav
 {
@@ -55,7 +78,7 @@
     height: auto;
     display: flex;
     width: 90%;
-    margin-left: 30px;
+    margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
     border-radius: 20px;
     background-color: rgb(45, 43, 38);
@@ -63,6 +86,11 @@
     align-content: center;
     justify-content: space-between;
     background-size:cover ;
+    transition: transform 0.3s;
+}
+#m1:hover
+{
+    transform: scale(1.05);
 }
 #m11
 {
@@ -70,13 +98,14 @@
     height: auto;
     display: flex;
     width: 90%;
-    margin-left: 30px;
+    margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
     border-radius: 20px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    transition: transform 0.3s;
 }
 #m2
 {
@@ -84,27 +113,35 @@
     height: auto;
     display: flex;
     width: 90%;
-    margin-left: 30px;
+    margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
     border-radius: 20px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    transition: transform 0.3s;
 }
 #m3
 {
     margin-top: 20px;
-    height: auto;
+    height: 380px;
     display: flex;
     width: 90%;
-    margin-left: 30px;
+    margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
     border-radius: 20px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    transition: transform 0.3s;
+}
+#m11:hover,
+#m2:hover,
+#m3:hover
+{
+    transform: scale(1.05);
 }
 .img
 {
