@@ -148,3 +148,15 @@
     border: 2px solid black;
     border-radius: 20px;
 }
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    border: 2px solid rgb(126, 152, 88);
+    border-radius: 20px;
+}
+footer p{
+    text-align : center ;
+    color : white;
+    margin : 0;
+}
