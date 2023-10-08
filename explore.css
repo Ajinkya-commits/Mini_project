@@ -13,6 +13,8 @@ a{
 .navbar{
   position: relative;
 
+
+  z-index: 1; 
   height: 115px;
   width: 100%;
   position: fixed;
