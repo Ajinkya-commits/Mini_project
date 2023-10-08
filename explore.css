@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body
 a{
   text-decoration: none;
   font-size: 26px;
@@ -12,7 +13,6 @@ a{
 }
 .navbar{
   position: relative;
-
 
   z-index: 1; 
   height: 115px;

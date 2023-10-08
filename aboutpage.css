@@ -42,7 +42,7 @@
 .nav
 {
     padding: 0px;
-    height: 120px;
+    height: 107px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
     width: 90%;
     margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
-    border-radius: 20px;
+    border-radius: 51px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
@@ -100,7 +100,7 @@
     width: 90%;
     margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
-    border-radius: 20px;
+    border-radius: 51px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
@@ -115,7 +115,7 @@
     width: 90%;
     margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
-    border-radius: 20px;
+    border-radius: 51px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
@@ -130,7 +130,7 @@
     width: 90%;
     margin-left: 110px;
     border: 2px solid rgb(62, 137, 167);
-    border-radius: 20px;
+    border-radius: 51px;
     background-color: rgb(45, 43, 38);
     align-items: center;
     align-content: center;
