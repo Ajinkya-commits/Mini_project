@@ -7,27 +7,38 @@
 a{
   text-decoration: none;
   font-size: 26px;
-  color: #333333;
+  color: #1f1717;
   font-weight: 600;
 }
 .navbar{
   position: relative;
-  z-index: 23;
-  height: 80px;
+
+  height: 115px;
   width: 100%;
   position: fixed;
   background-color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+
 }
 .navbar-main{
   height: 80px;
   width: 100%;
   position: fixed;
   display: flex;
+  margin-top: 10px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 25px;
 }
-
+.ab
+{
+  font-size: 30px;
+  transition: transform 0.3s;
+}
+.ab:hover{
+  transform: scale(1.1);
+}
 img{
   background-size: cover;
   height: 614px;
