@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    background-image: linear-gradient(135deg, #c3b9c3 10%, #bfb7b7 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,14 +17,14 @@ body {
   .box-form {
     margin: 0 auto;
     width: 80%;
-    background: #FFFFFF;
-    border-radius: 10px;
+    background: #161515;
+    border-radius: 40px;
     overflow: hidden;
     display: flex;
     flex: 1 1 100%;
     align-items: stretch;
     justify-content: space-between;
-    box-shadow: 0 0 20px 6px #090b6f85;
+    box-shadow: 0 0 20px 6px #e7e7ec85;
     
   }
   @media (max-width: 980px) {
@@ -39,17 +39,18 @@ body {
     height: auto;
   }
   .box-form .left {
-    color: #FFFFFF;
+    color: #0e0d0d;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg");
+    border: 2px solid rgb(4, 4, 4);
+    border-radius: 30px;
+    background-image: url("background.jpg");
     overflow: hidden;
   }
   .box-form .left .overlay {
     padding: 30px;
     width: 1000px;
-    height: 100%;
-    background: #5961f9ad;
+    height: 1000px;
+   
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -86,7 +87,7 @@ body {
     }
   }
   .box-form .right h4 {
-    font-size: 6vmax;
+    font-size: 100px;
     line-height: 0;
   }
   
@@ -94,13 +95,22 @@ body {
     overflow: hidden;
   }
   .box-form .right input {
-    width: 100%;
+    width: 700px;
+    height: 40px;
     padding: 10px;
     margin-top: 25px;
-    font-size: 16px;
-    border: none;
+    font-size: 30px;
+    color: white;
+background: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
     outline: none;
-    border-bottom: 2px solid #B0B3B9;
+
+  }
+  .box-form .right input::placeholder
+  {
+    color: white;
+    font-size: 30px;
   }
   .box-form .right .remember-me--forget-password {
     display: flex;
@@ -113,11 +123,13 @@ body {
     width: auto;
   }
   .box-form .right button {
-   
+  
     color: #fff;
-    font-size: 16px;
+    font-size: 30px;
     padding: 12px 35px;
     border-radius: 50px;
+    width: 30%;
+    height: 70px;
     display: inline-block;
     border: 0;
     outline: 0;
@@ -125,10 +137,11 @@ body {
     background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
   }
   .right{
-    margin-bottom: 100%;
+color: white;
     height: 800px;
   }
   .right p{
+    color: white;
     font-size: 500px;
   }
   

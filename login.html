@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <link>
     <meta charset="UTF-8" />
     <title>Login Page in HTML with CSS Code Example</title>
     <link
@@ -15,14 +15,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="login.css" />
-  </head>
+  </link>
   <body>
     <!-- partial:index.partial.html -->
     <div class="box-form">
       <div class="left">
         <div class="overlay">
-          <h3>Welcome to Xcursion Xpert!!</h3>
-          <p>
+          <h3 style="color: rgb(251, 250, 250); font-weight: bolder;">Welcome to Xcursion Xpert!!</h3>
+          <p style="color: rgb(249, 248, 248);  font-size: 35px; font-weight: bolder;">
             Say goodbye to long wait times and endless searches. Chatbot offers
             you instant access to knowledge, recommendations, and assistance
             24/7. From travel tips to general queries, our chatbot is your
@@ -36,24 +36,23 @@
             client_id=YOUR_APP_ID&
             redirect_uri=YOUR_REDIRECT_URI&
             scope=email"
-              ><i class="fa fa-facebook" aria-hidden="true"></i
+              ><i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px;"></i
             ></a>
-            <a
+            <a 
               href="https://accounts.google.com/o/oauth2/auth?
             client_id=YOUR_CLIENT_ID&
             redirect_uri=YOUR_REDIRECT_URI&
             response_type=code&
             scope=openid%20email%20profile"
-              ><i class="fa fa-google" aria-hidden="true"></i> Login with
-              Google</a
+              ><i class="fa fa-google" aria-hidden="true" style="font-size: 30px;"></i><span style="color: blue; font-size: 20px; font-weight: bolder; margin-left: 20px;">Login with Google</span></a>
             >
           </span>
         </div>
       </div>
       <div class="right">
-        <h4>Login</h4>
+        <h4>Login Now!</h4>
         <form action="/login" onsubmit="alertValue()" method="POST">
-          <p>
+          <p style="font-size: 30px;">
             Don't have an account? <a href="signup">Create Your Account</a> it
             takes less than a minute
           </p>
@@ -62,18 +61,20 @@
               type="text"
               id="eMail"
               name="eMail"
-              placeholder="user name"
+              placeholder="User name"
             />
             <br />
             <input
               type="password"
               id="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
             />
           </div>
           <br />
-		  <button input type="login">Login</button>
+          <div style="align-items: center; display: flex; justify-content: center; margin-right: 100px;">
+            <button input type="login" style="color: black; font-weight: bolder;">Login</button>
+          </div>
         </form>
         <script>
           function alertValue() {
