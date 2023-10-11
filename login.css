@@ -1,253 +1,191 @@
 body {
-<<<<<<< HEAD
-    background-image: linear-gradient(135deg, #c3b9c3 10%, #bfb7b7 100%);
-=======
-    background-image: linear-gradient(135deg, #35d0a1 10%, #c1b11d 100%);
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Open Sans", sans-serif;
-    color: #8d4040;
-    
-  }
-  b{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:1000px;
-    margin-left: 520px;
-  }
-  .overlay p{
- font-size: 25px;
- width: 800px;
- 
-  }
-  .overlay h3{
-    font-size: 50px;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, #c3b9c3 10%, #bfb7b7 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+.overlay p{
+font-size: 25px;
+width: 800px;
+}
+.overlay h3{
+  font-size: 50px;
+}
+
+.box-form {
+  margin: 0 auto;
+  width: 80%;
+  background: #161515;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #e7e7ec85;
   
+}
+@media (max-width: 980px) {
   .box-form {
-    margin: 0 auto;
-<<<<<<< HEAD
-    width: 80%;
-    background: #161515;
-    border-radius: 40px;
-    overflow: hidden;
-    display: flex;
-    flex: 1 1 100%;
-    align-items: stretch;
-    justify-content: space-between;
-    box-shadow: 0 0 20px 6px #e7e7ec85;
-=======
-   
-    background: #FFFFFF;
-    border-radius: 10px;
-
-    flex: 1 1 100%;
-    align-items: stretch;
-    justify-content: space-between;
-    box-shadow: 0 0 20px 6px #3f407685;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    
-  }
-  @media (max-width: 980px) {
-    .box-form {
-      flex-flow: wrap;
-      text-align: center;
-      align-content: center;
-      align-items: center;
-    }
-  }
-  .box-form div {
-    height: auto;
-  }
-  .box-form .left {
-<<<<<<< HEAD
-    color: #0e0d0d;
-=======
-    color: #382e22;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    background-size: cover;
-    border: 2px solid rgb(4, 4, 4);
-    border-radius: 30px;
-    background-image: url("background.jpg");
-    overflow: hidden;
-  }
-  .box-form .left .overlay {
-    padding: 30px;
-<<<<<<< HEAD
-    width: 1000px;
-    height: 1000px;
-   
-=======
-   
-    height: 100%;
-    background: rgba(48, 220, 225, 0.678);
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .box-form .left .overlay h1 {
-    font-size: 500px;
-
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  .box-form .left .overlay span p {
-    margin-top: 50px;
-    font-weight: 900;
-  }
-  .box-form .left .overlay span a {
-    background: #f4f7f9;
-    color: #241e1e;
-    margin-top: 30px;
-    padding: 14px 50px;
-    border-radius: 100px;
-    display: inline-block;
-    box-shadow: 0 3px 6px 1px #042d4657;
-  }
-  .box-form .left .overlay span a:last-child {
-    background: #f0f6f6;
-    margin-left: 30px;
-  }
-  .box-form .right {
-    padding: 20px;
-    overflow: hidden;
-    background-image: url('images.jpg'); /* URL to your image */
-    background-size: cover;
-    border-radius: 3px;
-  }
-
-  .box-form .right h4 {
-<<<<<<< HEAD
-    font-size: 100px;
-=======
-    font-size: 60px;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    line-height: 0;
-  }
-  
-  .box-form .right .inputs {
-    overflow: hidden;
-  }
-  .box-form .right input {
-<<<<<<< HEAD
-    width: 700px;
-    height: 40px;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 30px;
-    color: white;
-background: transparent;
-    border: 2px solid white;
-    border-radius: 50px;
-    outline: none;
-
-  }
-  .box-form .right input::placeholder
-  {
-    color: white;
-    font-size: 30px;
-=======
-    width: 50%;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 20px;
-    border: 3px solid black;
-    outline: none;
-    height: 30px;
-border-radius: 10px;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-  }
-  .box-form .right .remember-me--forget-password {
-    display: flex;
-    justify-content: space-between;
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
     align-items: center;
   }
-  .box-form .right .remember-me--forget-password input {
-    margin: 0;
-    margin-right: 7px;
-    width: auto;
+}
+.box-form div {
+  height: auto;
+}
+.box-form .left {
+  color: #0e0d0d;
+  background-size: cover;
+  border: 2px solid rgb(4, 4, 4);
+  border-radius: 30px;
+  background-image: url("../img/background.jpg");
+  overflow: hidden;
+}
+.box-form .left .overlay {
+  padding: 30px;
+  width: 1000px;
+  height: 1000px;
+ 
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-form .left .overlay h1 {
+  font-size: 500px;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.box-form .left .overlay span p {
+  margin-top: 50px;
+  font-weight: 900;
+}
+.box-form .left .overlay span a {
+  background: #fdfeff;
+  color: #241e1e;
+  margin-top: 30px;
+  padding: 14px 50px;
+  border-radius: 100px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+}
+.box-form .left .overlay span a:last-child {
+  background: #eeefef;
+  margin-left: 30px;
+}
+.box-form .right {
+  padding: 40px;
+  overflow: hidden;
+}
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
   }
-  .box-form .right button {
-<<<<<<< HEAD
-  
-    color: #fff;
-    font-size: 30px;
-    padding: 12px 35px;
-    border-radius: 50px;
-    width: 30%;
-    height: 70px;
-    display: inline-block;
-    border: 0;
-=======
-   
-    color: hsl(279, 78%, 4%);
-    font-size: 10px;
-    padding: 12px 35px;
-    border-radius: 50px;
-    border: 20px solidblack;
-    display: flex;
-    justify-content: center; /* Horizontally center the button */
-    align-items: center; 
-    border: 1;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
-    outline: 0;
-    box-shadow: 0px 4px 20px 0px #194fc2a6;
-    background-image: linear-gradient(135deg, #fcfdfe 10%, #106031 100%);
-  }
-  .right{
+}
+.box-form .right h4 {
+  font-size: 100px;
+  line-height: 0;
+}
+
+.box-form .right .inputs {
+  overflow: hidden;
+}
+.box-form .right input {
+  width: 700px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 30px;
+  color: white;
+background: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  outline: none;
+
+}
+.box-form .right input::placeholder
+{
+  color: white;
+  font-size: 30px;
+}
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+.box-form .right button {
+
+  color: #fff;
+  font-size: 30px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  width: 30%;
+  height: 70px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 20px 0px #49c628a6;
+  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+}
+.right{
 color: white;
-    height: 800px;
-  }
-  .right p{
-    color: white;
-    font-size: 500px;
-  }
-  
-  label {
-    display: block;
-    position: relative;
-    margin-left: 30px;
-  }
-  
-  label::before {
-    content: ' \f00c';
-    position: absolute;
-    font-family: FontAwesome;
-    background: transparent;
-    border: 3px solid #120e3f;
-    border-radius: 4px;
-    color: transparent;
-    left: -30px;
-    transition: all 0.2s linear;
-  }
-  
-  label:hover::before {
-    font-family: FontAwesome;
-    content: ' \f00c';
-    color: #dcc6c6;
-    cursor: pointer;
-    background: #741881;
-  }
-  
-  label:hover::before .text-checkbox {
-    background: #0b032e;
-  }
-  
-  label span.text-checkbox {
-    display: inline-block;
-    height: auto;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  
-  label input[type="checkbox"] {
-    display:none;
-  }
-  .right p{
-    font-size: 20px;
-  }
+  height: 800px;
+}
+.right p{
+  color: white;
+  font-size: 500px;
+}
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+
+label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid #70F570;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+
+label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #d0bebe;
+  cursor: pointer;
+  background: #70F570;
+}
+
+label:hover::before .text-checkbox {
+  background: #70F570;
+}
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+label input[type="checkbox"] {
+  display:none;
+}
+.right p{
+  font-size: 20px;
+}
