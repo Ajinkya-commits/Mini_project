@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Review</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>explore</title>
   <link rel="stylesheet" href="explore.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="explore.js"></script>
 </head>
-<div>
+
 <body>
   <header>
-    <h1>Xcursion Xpert Review</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/signin">login in</a>
-      <a href="#">chatbot</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="navbar">
+      <div class="navbar-main" style="font-size: 25px;">
+        <h2 style="margin-left: 30px; color: rgb(255, 4, 4); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">XcursionXpert</h2>
+        <a class="ab" href="test.html" style="  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>HOME</b></a>
+        <a  class="ab" style="  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>LOGIN</b></a>
+        <a class="ab" style="margin-right: 30px;   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>CONTACT US</b></a>
+    </div>
+    </div>
   </header>
-  <main>
-    <section class="hero">
-      <h2>Have a Wonderful Day :)</h2>
-      <form action="/comment" method ="POST">
-        <input type="text" id ="comment" name ="comment" placeholder="Share your experience - Leave a Review Today ! ">
-        <select name="category">
-          <option value="location">Location</option>
-          <option value="food">Food</option>
-          <option value="shopping">Shopping</option>
-          <option value="Exploring">Exploring</option>
-        </select>
-        <button type="submit">Search</button>
-      </form>
-    </section>
-    <section class="categories">
-      <h2>Most Popular Categories</h2>
-      <ul>
-        <li><a href="#">Amazing Places</a></li>
-        <li><a href="#">Concerts</a></li>
-        <li><a href="#">Travel Tips</a></li>
-        <li><a href="#">Music Festival</a></li>
-      </ul>
-    </section>
-  </main>
-  
+
+  <div class="main">
+    <main>
+      <div class="img"><img style="border: 2px solid black ; border-radius: 15px;" src="img.jpg" alt="">
+      </div>
+      <div class="imgdiv">
+        <h1 class="hello">EXPLORE</h1><br>
+        <p class="hello" style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 40px; font-weight: bolder;">Submerge yourself in the <br> experience</p>
+      </div>
+  </div>
+  <section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem"
+            @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
-    <p>Xcursion Xpert</p>
-  </footer>
-</div>
+    <div class="social"><a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+<a href=""><i class="fa-brands fa-linkedin"></i></a>
+<a href=""><i class="fa-brands fa-github"></i></a></div><br>
+<div class="text2"><p>Info . Support . Marketing</p><br><p>Terms of Use . Privacy Policy</p><br>
+<p><i class="fa-regular fa-copyright"></i> Xcursion Xpert</p></div>
+</footer>
+
+  </main>
+
 </body>
+
 </html>

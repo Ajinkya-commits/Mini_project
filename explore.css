@@ -1,122 +1,164 @@
-body {
-    font-family: sans-serif;
-    background-image: url(hero.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  header {
-    
-    background-color: #000000; 
-   
-    color: white;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 0;
-  }
-  
-  nav {
-    float: right;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
-  main {
-    margin-top: 90px;
-  }
-  
-  .hero {
-    color : black;
-    /* background-image: url(hero.jpg);
-    background-position: center;
-    background-size: cover;  */
-    padding: 20px;
-  }
-  
-  .hero h2 {
-    color: white;
-    font-size: 24px;
-    margin-bottom: 0;
-  }
-  
-  .hero form {
-    margin-top: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #000000;
-    color: white;
-    border: none;
-  }
-  
-  .categories {
-    margin-top: 20px;
-  
-  }
-  
-  .categories h2 {
-    font-size: 24px;
-    margin-bottom: 0;
-    background-color: black;
-    color:aliceblue;
-  }
-  
-  .categories ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .categories li {
-    display: inline-block;
-    padding: 10px;
-  }
-  
-  a:hover {
-    color: #ccc;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  footer {
-    color: white;
-    text-align : center ;
-    padding: 20px;
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+a{
+  text-decoration: none;
+  font-size: 26px;
+  color: #1f1717;
+  font-weight: 600;
+}
+body{
+  background-color:  #898181;
+}
+.hello
+{
+  opacity: 0; 
+  color: rgb(33, 33, 170); 
+  animation: fadeColorChange 3s ease-in-out forwards;
+}
+@keyframes fadeColorChange {
+  0% {
+      opacity: 0;
+      color: rgb(242, 246, 241); 
   }
-  
-  .div {
-    display : flex;
-    flex-direction : column ;
-    justify-content: space-between ;
+  100% {
+      opacity: 1; 
+      color: rgb(11, 0, 0); 
   }
+}
+.navbar{
+  position: relative;
 
-  ::placeholder{
-    font-size : 20px;
-  }
-    textarea::placeholder{
-      padding : 10 px;
-    }
+  z-index: 1; 
+  height: 115px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(248, 246, 245);
+  border: 4px solid black;
+  border-radius: 20px;
+
+}
+.navbar-main{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.ab
+{
+  font-size: 30px;
+  color: rgb(15, 15, 15);
+  transition: transform 0.3s;
+}
+.ab:hover{
+  transform: scale(1.1);
+}
+img{
+  background-size: cover;
+  height: 614px;
+  width: 100%;
+  margin-top: 5%;
+  position:relative;
+  z-index: -1;
+}
+.imgdiv{
   
-    
+  position:absolute;
+  top: 114px;
+  left: 19px;
+  font-size: 35px ;
+   color: rgb(39, 44, 48);
+   margin: 10px;
+}
+.container {
+	max-width: 640px;
+	/* margin: 30px auto; */
+	background: #898181;
+	border-radius: 8px;
+	padding: 20px;
+}
+.comment {
+	display: block;
+	transition: all 1s;
+}
+.input{
+  height: 100px;
+  width: 200%;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-size: 30px;
+  background-color: #dbe5e4;
+  box-shadow: 5px 10px #888888;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+container textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+button.primaryContained {
+	background: #016ba8;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+  height: 50px;
+
+ width: 40%;
+	margin-top: 0px;
+  margin-left: 3px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size:13px;
+	border-radius: 5px;
+}
+button.primaryContained:hover {
+	background: #9201A8;
+}
+footer {
+  height: 400px;
+  width: 100%;
+  background-color: #232f2e;
+}
+
+.social {
+  text-align: center;
+  font-size: 50px;
+}
+
+.social a {
+  position: relative;
+  top: 50px;
+  margin: 25px;
+  color: #ffffff;
+}
+.text2{
+ 
+  font-size:35px ;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+}
