@@ -1,9 +1,5 @@
 body {
-<<<<<<< HEAD
     background-image: linear-gradient(135deg, #c3b9c3 10%, #bfb7b7 100%);
-=======
-    background-image: linear-gradient(135deg, #35d0a1 10%, #c1b11d 100%);
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,7 +26,6 @@ body {
   
   .box-form {
     margin: 0 auto;
-<<<<<<< HEAD
     width: 80%;
     background: #161515;
     border-radius: 40px;
@@ -40,16 +35,6 @@ body {
     align-items: stretch;
     justify-content: space-between;
     box-shadow: 0 0 20px 6px #e7e7ec85;
-=======
-   
-    background: #FFFFFF;
-    border-radius: 10px;
-
-    flex: 1 1 100%;
-    align-items: stretch;
-    justify-content: space-between;
-    box-shadow: 0 0 20px 6px #3f407685;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     
   }
   @media (max-width: 980px) {
@@ -64,11 +49,7 @@ body {
     height: auto;
   }
   .box-form .left {
-<<<<<<< HEAD
     color: #0e0d0d;
-=======
-    color: #382e22;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     background-size: cover;
     border: 2px solid rgb(4, 4, 4);
     border-radius: 30px;
@@ -77,15 +58,9 @@ body {
   }
   .box-form .left .overlay {
     padding: 30px;
-<<<<<<< HEAD
     width: 1000px;
     height: 1000px;
    
-=======
-   
-    height: 100%;
-    background: rgba(48, 220, 225, 0.678);
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -115,17 +90,13 @@ body {
   .box-form .right {
     padding: 20px;
     overflow: hidden;
-    background-image: url('images.jpg'); /* URL to your image */
+    background-color: #111111;
     background-size: cover;
     border-radius: 3px;
   }
 
   .box-form .right h4 {
-<<<<<<< HEAD
     font-size: 100px;
-=======
-    font-size: 60px;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     line-height: 0;
   }
   
@@ -133,7 +104,6 @@ body {
     overflow: hidden;
   }
   .box-form .right input {
-<<<<<<< HEAD
     width: 700px;
     height: 40px;
     padding: 10px;
@@ -150,16 +120,6 @@ background: transparent;
   {
     color: white;
     font-size: 30px;
-=======
-    width: 50%;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 20px;
-    border: 3px solid black;
-    outline: none;
-    height: 30px;
-border-radius: 10px;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
   }
   .box-form .right .remember-me--forget-password {
     display: flex;
@@ -172,7 +132,6 @@ border-radius: 10px;
     width: auto;
   }
   .box-form .right button {
-<<<<<<< HEAD
   
     color: #fff;
     font-size: 30px;
@@ -182,18 +141,6 @@ border-radius: 10px;
     height: 70px;
     display: inline-block;
     border: 0;
-=======
-   
-    color: hsl(279, 78%, 4%);
-    font-size: 10px;
-    padding: 12px 35px;
-    border-radius: 50px;
-    border: 20px solidblack;
-    display: flex;
-    justify-content: center; /* Horizontally center the button */
-    align-items: center; 
-    border: 1;
->>>>>>> 190ec499e015cca6f98e27f9f233f55a0237d68a
     outline: 0;
     box-shadow: 0px 4px 20px 0px #194fc2a6;
     background-image: linear-gradient(135deg, #fcfdfe 10%, #106031 100%);
