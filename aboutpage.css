@@ -69,20 +69,24 @@
 }
 #members
 {
-    height: auto;
+    height: 1104px;
     border-top: 4px solid rgb(12, 12, 12);
-    border-bottom: 4px solid rgb(12, 12, 12);
+    border-bottom: none;
     border-right: 2px solid rgb(11, 11, 11);
     border-left: 2px solid rgb(11, 11, 11);
 
     border-radius: 20px;
+border-bottom-left-radius: 0%;
+border-bottom-right-radius: 0%;
+
+    border-bottom-left-radius: none;
     background-color:  rgb(221, 219, 204);
 }
 #m1
 {
-    height: auto;
+    height: 450px;
     display: flex;
-    width: 90%;
+    width: 80%;
     margin-left: 110px;
     border: 4px solid rgb(4, 4, 4);
     border-radius: 40px;
@@ -95,15 +99,15 @@
 }
 #m1:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 #m11
 {
-    margin-top: 20px;
-    height: auto;
+    height: 450px;
     display: flex;
     width: 90%;
-    margin-left: 110px;
+    margin-left: 50px;
+    margin-right: 100px;
     border: 4px solid rgb(9, 9, 9);
     border-radius: 40px;
     background-color:  rgb(133, 155, 169);
@@ -115,9 +119,9 @@
 #m2
 {
     margin-top: 20px;
-    height: auto;
+    height: 450px;
     display: flex;
-    width: 90%;
+    width: 80%;
     margin-left: 110px;
     border: 4px solid rgb(14, 14, 14);
     border-radius: 40px;
@@ -130,10 +134,11 @@
 #m3
 {
     margin-top: 20px;
-    height: 380px;
+    height: 450px;
     display: flex;
     width: 90%;
-    margin-left: 110px;
+    margin-left: 50px;
+    margin-right: 100px;
     border: 4px solid rgb(14, 14, 14);
     border-radius: 40px;
     background-color:  rgb(133, 155, 169);
@@ -146,7 +151,7 @@
 #m2:hover,
 #m3:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .img
 {
@@ -159,9 +164,9 @@ footer {
     border-right: 2px solid rgb(11, 11, 11);
     border-left: 2px solid rgb(11, 11, 11);
 
-    padding: 20px;
+    padding: 31px;
     border-bottom: 4px solid rgb(14, 14, 13);
-    border-radius: 20px;
+
 }
 footer p{
     text-align : center ;
